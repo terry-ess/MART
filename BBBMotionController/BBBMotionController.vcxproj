@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{D12E923F-1480-463C-8173-4B1D0225A479}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.beaglebone</ToolchainID>
+    <ToolchainVersion>4.6.3/7.8/r1</ToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.beaglebone</ToolchainID>
+    <ToolchainVersion>4.6.3/7.8/r1</ToolchainVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>pthread;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <LinkerScript />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="EzSonar.cpp" />
+    <ClCompile Include="EzSSonar.cpp" />
+    <ClCompile Include="Gpio.cpp" />
+    <ClCompile Include="LinearMotion.cpp" />
+    <ClCompile Include="log.cpp" />
+    <ClCompile Include="MCLinearMotion.cpp" />
+    <ClCompile Include="MCSpinMotion.cpp" />
+    <ClCompile Include="MotionController.cpp" />
+    <ClCompile Include="MotorController.cpp" />
+    <ClCompile Include="Mpu6050.cpp" />
+    <ClCompile Include="Record.cpp" />
+    <ClCompile Include="RefMotion.cpp" />
+    <ClCompile Include="SpinMotion.cpp" />
+    <ClCompile Include="TLinearMotion.cpp" />
+    <ClCompile Include="udpsocket.cpp" />
+    <ClCompile Include="VoltSensor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BBBMotionController-Debug.vgdbsettings" />
+    <None Include="BBBMotionController-Release.vgdbsettings" />
+    <None Include="readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EZSonar.h" />
+    <ClInclude Include="EZSSonar.h" />
+    <ClInclude Include="Gpio.h" />
+    <ClInclude Include="LinearMotion.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="MCLinearMotion.h" />
+    <ClInclude Include="MCSpinMotion.h" />
+    <ClInclude Include="MotionController.h" />
+    <ClInclude Include="MotorController.h" />
+    <ClInclude Include="Mpu6050.h" />
+    <ClInclude Include="Record.h" />
+    <ClInclude Include="RefMotion.h" />
+    <ClInclude Include="SharedData.h" />
+    <ClInclude Include="SpinMotion.h" />
+    <ClInclude Include="TLinearMotion.h" />
+    <ClInclude Include="udpsocket.h" />
+    <ClInclude Include="VoltSensor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="motioncontroller.jpg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

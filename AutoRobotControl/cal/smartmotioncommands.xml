@@ -1,0 +1,60 @@
+<grammar version="1.0" xml:lang="en-US" root="rootRule"
+ xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="rootRule">
+    <one-of>
+       <item> <ruleref uri="#goto" /> </item>
+       <item> <ruleref uri="#face" /> </item>
+       <item> come here </item>
+    </one-of>
+  </rule>
+
+  <rule id="goto">
+    <item> go to </item>
+    <item>
+       <item repeat="0-1">
+         <one-of>
+         <item>gym</item>
+         <item>hall</item>
+         <item>office</item>
+         </one-of>
+       </item>
+       <item repeat="0-1">
+         <one-of>
+           <item>exit</item>
+           <item>recharge</item>
+           <item>center</item>
+           <item>desk</item>
+           <item>calibrate</item>
+           <item>center</item>
+         </one-of>
+       </item>
+       <item repeat="0-1">
+         <one-of>
+         <item>hall</item>
+         <item>office</item>
+         <item>gym</item>
+         <item>guest</item>
+         <item>bath</item>
+         <item>stairs</item>
+         <item>hall</item>
+         </one-of>
+       </item>
+    </item>
+  </rule>
+
+  <rule id="face">
+    <item> face </item>
+    <item>
+      <one-of>
+         <item>exit</item>
+         <item>recharge</item>
+         <item>center</item>
+         <item>desk</item>
+         <item>calibrate</item>
+         <item>center</item>
+      </one-of>
+    </item>
+  </rule>
+
+</grammar>

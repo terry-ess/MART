@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEF0CED3-D76B-4573-9229-F1FC31570C74}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sub_system_Operation</RootNamespace>
+    <AssemblyName>Sub-system Operation</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Coding4Fun.Kinect.WinForm">
+      <HintPath>..\..\..\AutoRobotControl\bin\Debug\Coding4Fun.Kinect.WinForm.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=4.15.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MathNet.Numerics.4.15.0\lib\net40\MathNet.Numerics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Kinect, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Microsoft SDKs\Kinect\v1.8\Assemblies\Microsoft.Kinect.dll</HintPath>
+    </Reference>
+    <Reference Include="RemoteUserInterface">
+      <HintPath>..\..\bin\Debug\RemoteUserInterface.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HeadAssemblyOp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HeadAssemblyOp.Designer.cs">
+      <DependentUpon>HeadAssemblyOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KinectMapping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KinectMapping.Designer.cs">
+      <DependentUpon>KinectMapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KinectOp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KinectOp.Designer.cs">
+      <DependentUpon>KinectOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KinectDistCal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KinectDistCal.Designer.cs">
+      <DependentUpon>KinectDistCal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KinectTargetCal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KinectTargetCal.Designer.cs">
+      <DependentUpon>KinectTargetCal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeasuredDistInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeasuredDistInputForm.Designer.cs">
+      <DependentUpon>MeasuredDistInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoboticArmOp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoboticArmOp.Designer.cs">
+      <DependentUpon>RoboticArmOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SonarOp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SonarOp.Designer.cs">
+      <DependentUpon>SonarOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubSystemOpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubSystemOpForm.Designer.cs">
+      <DependentUpon>SubSystemOpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HeadAssemblyOp.resx">
+      <DependentUpon>HeadAssemblyOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KinectMapping.resx">
+      <DependentUpon>KinectMapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KinectOp.resx">
+      <DependentUpon>KinectOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KinectDistCal.resx">
+      <DependentUpon>KinectDistCal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KinectTargetCal.resx">
+      <DependentUpon>KinectTargetCal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeasuredDistInputForm.resx">
+      <DependentUpon>MeasuredDistInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoboticArmOp.resx">
+      <DependentUpon>RoboticArmOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SonarOp.resx">
+      <DependentUpon>SonarOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubSystemOpForm.resx">
+      <DependentUpon>SubSystemOpForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

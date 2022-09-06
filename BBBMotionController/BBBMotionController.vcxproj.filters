@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{f4718f6c-b465-4d70-b0ed-d8f2cebaf9f0}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{402c004f-91b0-4d62-bed6-9fcf0c147c16}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{baa17e04-6c62-4dd1-abdc-5239c811d91b}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{18dc1267-a993-4c86-843f-7c4b53d33883}</UniqueIdentifier>
+      <Extensions>vgdbsettings</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EzSonar.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="EzSSonar.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gpio.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="LinearMotion.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="log.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCLinearMotion.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCSpinMotion.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="MotionController.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="MotorController.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mpu6050.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Record.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="RefMotion.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpinMotion.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="TLinearMotion.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="udpsocket.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="VoltSensor.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BBBMotionController-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="BBBMotionController-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EZSonar.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="EZSSonar.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gpio.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearMotion.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCLinearMotion.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCSpinMotion.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="MotionController.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="MotorController.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mpu6050.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Record.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="RefMotion.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedData.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpinMotion.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="TLinearMotion.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="udpsocket.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="VoltSensor.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="motioncontroller.jpg">
+      <Filter>Resource files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

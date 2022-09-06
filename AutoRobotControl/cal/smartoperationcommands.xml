@@ -1,0 +1,13 @@
+<grammar version="1.0" xml:lang="en-US" root="rootRule"
+ xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="rootRule">
+    <item> run operation </item>
+    <one-of>
+       <item> magnetic heading survey </item>
+       <item> another op </item>
+    </one-of>
+  </rule>
+
+</grammar>
+

@@ -1,0 +1,12 @@
+<grammar version="1.0" xml:lang="en-US" root="rootRule"
+ xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="rootRule">
+    <one-of>
+       <item>run</item>
+       <item>done</item>
+       <item>again</item>
+    </one-of>
+  </rule>
+
+</grammar>

@@ -1,0 +1,59 @@
+<grammar version="1.0" xml:lang="en-US" root="rootRule"
+ xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="rootRule">
+    <one-of>
+       <item> we are finished </item>
+       <item> manual mode </item>
+       <item> shoot </item>
+       <item> position </item>
+       <item> arm off </item>
+       <item> return start </item>
+       <item> open </item>
+       <item> close </item>
+       <item> forward </item>
+       <item> back </item>
+       <item> left </item>
+       <item> right </item>
+       <item> up </item>
+       <item> down </item>
+       <item> park </item>
+       <item> give me that </item>
+       <item> okay </item>
+       <item> <ruleref uri="#again" /> </item>
+       <item> <ruleref uri="#rotate" /> </item>
+       <item> <ruleref uri="#wrist" /> </item>
+    </one-of>
+  </rule>
+
+  <rule id="again">
+    <one-of>
+      <item>again</item>
+      <item>repeat</item>
+      <item>more</item>
+    </one-of>
+  </rule>
+
+  <rule id="rotate">
+    <item> rotate </item>
+    <item>
+       <one-of>
+         <item>perpendicular</item>
+         <item>parallel</item>
+         <item>right</item>
+         <item>left</item>
+       </one-of>
+    </item>
+  </rule>
+
+  <rule id="wrist">
+    <item> wrist </item>
+    <item>
+       <one-of>
+         <item>inline</item>
+         <item>parallel</item>
+       </one-of>
+    </item>
+  </rule>
+
+</grammar>

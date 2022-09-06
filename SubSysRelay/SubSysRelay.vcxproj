@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
+    <RootNamespace>SubSysRelay</RootNamespace>
+    <ProjectName>SubSysRelay</ProjectName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\SubSysRelay;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\variants\standard;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\\lib\gcc\avr\7.3.0\include;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\avr\include;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\\lib\gcc\avr\7.3.0\include;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\avr\include-fixed;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.2\include;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.SubSysRelay.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_atmega328p__;__AVR_ATmega328P__;__AVR_ATmega328p__;F_CPU=16000000L;ARDUINO=10605;ARDUINO_AVR_UNO;ARDUINO_ARCH_AVR;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="readme.md" />
+    <None Include="SubSysRelay.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__vm\.SubSysRelay.vsarduino.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.board.desc="Arduino Uno" arduino.board.name="uno" arduino.board.property_bag="name=Arduino Uno&#xD;&#xA;upload.protocol=arduino&#xD;&#xA;upload.maximum_size=32256&#xD;&#xA;upload.speed=115200&#xD;&#xA;bootloader.low_fuses=0xff&#xD;&#xA;bootloader.high_fuses=0xde&#xD;&#xA;bootloader.extended_fuses=0x05&#xD;&#xA;bootloader.path=optiboot&#xD;&#xA;bootloader.file=optiboot_atmega328.hex&#xD;&#xA;bootloader.unlock_bits=0x3F&#xD;&#xA;bootloader.lock_bits=0x0F&#xD;&#xA;build.mcu=atmega328p&#xD;&#xA;build.f_cpu=16000000L&#xD;&#xA;build.core=arduino&#xD;&#xA;build.variant=standard&#xD;&#xA;runtime.ide.path=c:\Program Files (x86)\Arduino&#xD;&#xA;runtime.os=windows&#xD;&#xA;build.system.path=c:\Program Files (x86)\Arduino\hardware\arduino\system&#xD;&#xA;runtime.ide.version=105&#xD;&#xA;target_package=arduino&#xD;&#xA;target_platform=avr&#xD;&#xA;runtime.hardware.path=c:\Program Files (x86)\Arduino\hardware&#xD;&#xA;originalid=uno&#xD;&#xA;intellisense.tools.path={runtime.hardware.path}\tools\&#xD;&#xA;intellisense.include.paths={intellisense.tools.path}\avr\avr\include;{intellisense.tools.path}\avr\avr\include\avr;{intellisense.tools.path}\avr\avr\include\util;&#xD;&#xA;recipe.cpp.o.pattern=&#xD;&#xA;recipe.c.o.pattern=&#xD;&#xA;recipe.s.o.pattern=&#xD;&#xA;upload.verify=&#xD;&#xA;tools.vmopenocd.cmd=bin/openocd.exe&#xD;&#xA;tools.vmopenocd.cmd.windows=bin/openocd.exe&#xD;&#xA;tools.vmopenocd.debug.params.verbose=-d2&#xD;&#xA;tools.vmopenocd.debug.params.quiet=-d0&#xD;&#xA;tools.vmopenocd.debug.address=localhost:3333&#xD;&#xA;tools.vmopenocd.path={runtime.tools.openocd-0.10.0.20200213.path}&#xD;&#xA;tools.vmopenocd.scriptPath=-s &quot;{path}/scripts/&quot;&#xD;&#xA;tools.vmopenocd.logging=-l &quot;{{build.path}/{build.project_name}_DebugOpenOCD.log}&quot;&#xD;&#xA;tools.vmopenocd.boardCmd=&#xD;&#xA;tools.vmopenocd.targetCmd=&#xD;&#xA;tools.vmopenocd.initCmd=&#xD;&#xA;tools.vmopenocd.debug.pattern=&quot;{path}/{cmd}&quot; {debug.verbose} {logging} {scriptPath} {boardCmd} {targetCmd} {initCmd}&#xD;&#xA;tools.vmopenocd.program.cmd=bin/openocd.exe&#xD;&#xA;tools.vmopenocd.program.cmd.windows=bin/openocd.exe&#xD;&#xA;tools.vmopenocd.program.path={runtime.tools.openocd-0.10.0.20200213.path}&#xD;&#xA;tools.vmopenocd.program.address=localhost:3333&#xD;&#xA;tools.vmopenocd.program.params.verbose=-d2&#xD;&#xA;tools.vmopenocd.program.params.quiet=-d0&#xD;&#xA;tools.vmopenocd.program.elf.message=****[vMicro]**** Uploading ELF :&#xD;&#xA;tools.vmopenocd.program.pattern=&quot;{path}/{cmd}&quot; {program.verbose} {scriptPath} {boardCmd} {targetCmd} -c &quot;echo -n {{program.elf.message}}&quot; {programCmd}&#xD;&#xA;tools.atmelICE.protocol=&#xD;&#xA;tools.atmelICE.debug.cmd=arm-none-eabi-gdb.exe&#xD;&#xA;tools.atmelICE.debug.path={runtime.tools.arm-none-eabi-gcc.path}/bin&#xD;&#xA;tools.atmelICE.debug.pattern=&quot;{path}/{cmd}&quot;&#xD;&#xA;tools.atmelICE.server.initCmd=-c &quot;init; reset halt&quot;&#xD;&#xA;vs-cmd.Debug.AttachtoProcess.tools.atmelICE.server.initCmd=-c &quot;init&quot;&#xD;&#xA;tools.atmelICE.server.boardCmd=-c &quot;adapter driver cmsis-dap&quot; -c &quot;cmsis_dap_vid_pid 0x03eb 0x2141&quot;&#xD;&#xA;tools.atmelICE.server.tool=vmopenocd&#xD;&#xA;tools.atmelICE.debug.server=vmopenocd&#xD;&#xA;tools.atmelICE.program.scriptPath=-s &quot;{program.path}/scripts/&quot;&#xD;&#xA;tools.atmelICE.program.boardCmd=-c &quot;adapter driver cmsis-dap&quot; -c &quot;cmsis_dap_vid_pid 0x03eb 0x2141&quot;&#xD;&#xA;tools.atmelICE.program.cmd=bin/openocd.exe&#xD;&#xA;tools.atmelICE.program.cmd.windows=bin/openocd.exe&#xD;&#xA;tools.atmelICE.program.path={runtime.tools.openocd-0.10.0.20200213.path}&#xD;&#xA;tools.atmelICE.program.address=localhost:3333&#xD;&#xA;tools.atmelICE.program.params.verbose=-d2&#xD;&#xA;tools.atmelICE.program.params.quiet=-d0&#xD;&#xA;tools.atmelICE.program.elf.message=****[vMicro]**** Uploading ELF :&#xD;&#xA;tools.atmelICE.program.pattern=&quot;{program.path}/{program.cmd}&quot; {program.verbose} {program.scriptPath} {program.boardCmd} {program.targetCmd} -c &quot;echo -n {{program.elf.message}}&quot; {program.programCmd}&#xD;&#xA;tools.atmelICE.program.extra_params=&#xD;&#xA;tools.atmelICE.program.protocol=&#xD;&#xA;tools.atmelICE.erase.params.verbose=-d3&#xD;&#xA;tools.atmelICE.erase.params.quiet=-d0&#xD;&#xA;tools.atmelICE.erase.pattern=&#xD;&#xA;tools.jlink.cmd=arm-none-eabi-gdb.exe&#xD;&#xA;tools.jlink.path={runtime.tools.arm-none-eabi-gcc.path}/bin&#xD;&#xA;tools.jlink.pattern=&quot;{path}/{cmd}&quot;&#xD;&#xA;tools.jlink.server.tool=vmopenocd&#xD;&#xA;tools.jlink.debug.server=vmopenocd&#xD;&#xA;tools.jlink.server.boardCmd=-f &quot;interface/jlink.cfg&quot;&#xD;&#xA;tools.jlink.server.initCmd=-c &quot;init; reset halt&quot;&#xD;&#xA;vs-cmd.Debug.AttachtoProcess.tools.jlink.server.initCmd=-c &quot;init&quot;&#xD;&#xA;tools.jlink.program.scriptPath=-s &quot;{program.path}/scripts/&quot;&#xD;&#xA;tools.jlink.program.boardCmd=-f &quot;interface/jlink.cfg&quot;&#xD;&#xA;tools.jlink.program.cmd=bin/openocd.exe&#xD;&#xA;tools.jlink.program.cmd.windows=bin/openocd.exe&#xD;&#xA;tools.jlink.program.path={runtime.tools.openocd-0.10.0.20200213.path}&#xD;&#xA;tools.jlink.program.address=localhost:3333&#xD;&#xA;tools.jlink.program.params.verbose=-d2&#xD;&#xA;tools.jlink.program.params.quiet=-d0&#xD;&#xA;tools.jlink.program.elf.message=****[vMicro]**** Uploading ELF :&#xD;&#xA;tools.jlink.program.pattern=&quot;{program.path}/{program.cmd}&quot; {program.verbose} {program.scriptPath} {program.boardCmd} {program.targetCmd} -c &quot;echo -n {{program.elf.message}}&quot; {program.programCmd}&#xD;&#xA;tools.jlink.upload.scriptPath=-s &quot;{upload.path}/scripts/&quot;&#xD;&#xA;tools.jlink.upload.boardCmd=-f &quot;interface/jlink.cfg&quot;&#xD;&#xA;tools.jlink.upload.cmd=bin/openocd.exe&#xD;&#xA;tools.jlink.upload.cmd.windows=bin/openocd.exe&#xD;&#xA;tools.jlink.upload.path={runtime.tools.openocd-0.10.0.20200213.path}&#xD;&#xA;tools.jlink.upload.address=localhost:3333&#xD;&#xA;tools.jlink.upload.params.verbose=-d2&#xD;&#xA;tools.jlink.upload.params.quiet=-d0&#xD;&#xA;tools.jlink.upload.elf.message=****[vMicro]**** Uploading ELF :&#xD;&#xA;tools.jlink.upload.pattern=&quot;{upload.path}/{upload.cmd}&quot; {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c &quot;echo -n {{upload.elf.message}}&quot; {upload.programCmd}&#xD;&#xA;tools.bmp_upload.cmd=arm-none-eabi-gdb.exe&#xD;&#xA;tools.bmp_upload.debug.path={runtime.tools.arm-none-eabi-gcc.path}/bin/&#xD;&#xA;tools.bmp_upload.program.cmd=bin/arm-none-eabi-gdb.exe&#xD;&#xA;tools.bmp_upload.program.cmd.windows=bin/arm-none-eabi-gdb.exe&#xD;&#xA;tools.bmp_upload.program.path={runtime.tools.arm-none-eabi-gcc.path}&#xD;&#xA;tools.bmp_upload.upload.cmd=bin/arm-none-eabi-gdb.exe&#xD;&#xA;tools.bmp_upload.upload.cmd.windows=bin/arm-none-eabi-gdb.exe&#xD;&#xA;tools.bmp_upload.upload.path={runtime.tools.arm-none-eabi-gcc.path}&#xD;&#xA;tools.bmp_upload.server.initCmd=-c &quot;init; reset halt&quot;&#xD;&#xA;vs-cmd.Debug.AttachtoProcess.tools.bmp_upload.server.initCmd=-c &quot;init&quot;&#xD;&#xA;tools.bmp_upload.showLocalSerialPort=true&#xD;&#xA;tools.bmp_upload.debug.server=&#xD;&#xA;tools.stlinkv2.description=&#xD;&#xA;tools.stlinkv2.cmd=arm-none-eabi-gdb.exe&#xD;&#xA;tools.stlinkv2.path={runtime.tools.arm-none-eabi-gcc.path}/bin&#xD;&#xA;tools.stlinkv2.pattern=&quot;{path}/{cmd}&quot;&#xD;&#xA;tools.stlinkv2.server.tool=vmopenocd&#xD;&#xA;tools.stlinkv2.debug.server=vmopenocd&#xD;&#xA;tools.stlinkv2.server.boardCmd=-f &quot;interface/stlink.cfg&quot;&#xD;&#xA;tools.stlinkv2.server.initCmd=-c &quot;init; reset halt&quot;&#xD;&#xA;vs-cmd.Debug.AttachtoProcess.tools.stlinkv2.server.initCmd=-c &quot;init&quot;&#xD;&#xA;tools.stlinkv2.upload.scriptPath=-s &quot;{upload.path}/scripts/&quot;&#xD;&#xA;tools.stlinkv2.upload.boardCmd=-f &quot;interface/stlink.cfg&quot;&#xD;&#xA;tools.stlinkv2.upload.cmd=bin/openocd.exe&#xD;&#xA;tools.stlinkv2.upload.cmd.windows=bin/openocd.exe&#xD;&#xA;tools.stlinkv2.upload.path={runtime.tools.openocd-0.10.0.20200213.path}&#xD;&#xA;tools.stlinkv2.upload.address=localhost:3333&#xD;&#xA;tools.stlinkv2.upload.params.verbose=-d2&#xD;&#xA;tools.stlinkv2.upload.params.quiet=-d0&#xD;&#xA;tools.stlinkv2.upload.elf.message=****[vMicro]**** Uploading ELF :&#xD;&#xA;tools.stlinkv2.upload.pattern=&quot;{upload.path}/{upload.cmd}&quot; {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c &quot;echo -n {{upload.elf.message}}&quot; {upload.programCmd}&#xD;&#xA;tools.stlinkv2.upload.extra_params=&#xD;&#xA;tools.stlinkv2.upload.protocol=&#xD;&#xA;tools.stlinkv2.protocol=&#xD;&#xA;tools.f2232mm.cmd=arm-none-eabi-gdb.exe&#xD;&#xA;tools.f2232mm.path={runtime.tools.arm-none-eabi-gcc.path}/bin&#xD;&#xA;tools.f2232mm.pattern=&quot;{path}/{cmd}&quot; {args}&#xD;&#xA;tools.f2232mm.server.tool=vmopenocd&#xD;&#xA;tools.f2232mm.debug.server=vmopenocd&#xD;&#xA;tools.f2232mm.server.boardCmd=-f &quot;interface/ftdi/minimodule.cfg&quot;&#xD;&#xA;tools.f2232mm.server.initCmd=-c &quot;init; reset halt&quot;&#xD;&#xA;vs-cmd.Debug.AttachtoProcess.tools.f2232mm.server.initCmd=-c &quot;init&quot;&#xD;&#xA;tools.f2232mm.upload.scriptPath=-s &quot;{upload.path}/scripts/&quot;&#xD;&#xA;tools.f2232mm.upload.boardCmd=-f &quot;interface/ftdi/minimodule.cfg&quot;&#xD;&#xA;tools.f2232mm.upload.cmd=bin/openocd.exe&#xD;&#xA;tools.f2232mm.upload.cmd.windows=bin/openocd.exe&#xD;&#xA;tools.f2232mm.upload.path={runtime.tools.openocd-0.10.0.20200213.path}&#xD;&#xA;tools.f2232mm.upload.address=localhost:3333&#xD;&#xA;tools.f2232mm.upload.params.verbose=-d2&#xD;&#xA;tools.f2232mm.upload.params.quiet=-d0&#xD;&#xA;tools.f2232mm.upload.elf.message=****[vMicro]**** Uploading ELF :&#xD;&#xA;tools.f2232mm.upload.pattern=&quot;{upload.path}/{upload.cmd}&quot; {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c &quot;echo -n {{upload.elf.message}}&quot; {upload.programCmd}&#xD;&#xA;tools.f2232mm.upload.extra_params=&#xD;&#xA;tools.f2232mm.upload.protocol=&#xD;&#xA;tools.f2232mm.protocol=&#xD;&#xA;tools.f2232h.server.boardCmd=-f &quot;interface/ftdi/minimodule-lowcost.cfg&quot;&#xD;&#xA;tools.f2232h.cmd=arm-none-eabi-gdb.exe&#xD;&#xA;tools.f2232h.path={runtime.tools.arm-none-eabi-gcc.path}/bin&#xD;&#xA;tools.f2232h.pattern=&quot;{path}/{cmd}&quot;&#xD;&#xA;tools.f2232h.server.tool=vmopenocd&#xD;&#xA;tools.f2232h.debug.server=vmopenocd&#xD;&#xA;tools.f2232h.server.initCmd=-c &quot;init; reset halt&quot;&#xD;&#xA;vs-cmd.Debug.AttachtoProcess.tools.f2232h.server.initCmd=-c &quot;init&quot;&#xD;&#xA;tools.f2232h.upload.scriptPath=-s &quot;{upload.path}/scripts/&quot;&#xD;&#xA;tools.f2232h.upload.boardCmd=-f &quot;interface/ftdi/minimodule-lowcost.cfg&quot;&#xD;&#xA;tools.f2232h.upload.cmd=bin/openocd.exe&#xD;&#xA;tools.f2232h.upload.cmd.windows=bin/openocd.exe&#xD;&#xA;tools.f2232h.upload.path={runtime.tools.openocd-0.10.0.20200213.path}&#xD;&#xA;tools.f2232h.upload.address=localhost:3333&#xD;&#xA;tools.f2232h.upload.params.verbose=-d2&#xD;&#xA;tools.f2232h.upload.params.quiet=-d0&#xD;&#xA;tools.f2232h.upload.elf.message=****[vMicro]**** Uploading ELF :&#xD;&#xA;tools.f2232h.upload.pattern=&quot;{upload.path}/{upload.cmd}&quot; {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c &quot;echo -n {{upload.elf.message}}&quot; {upload.programCmd}&#xD;&#xA;tools.f2232h.upload.extra_params=&#xD;&#xA;tools.f2232h.upload.protocol=&#xD;&#xA;tools.f2232h.protocol=&#xD;&#xA;tools.daplink.server.boardCmd=-f &quot;interface/cmsis-dap.cfg&quot; -c &quot;adapter speed 1000&quot;&#xD;&#xA;tools.daplink.cmd=arm-none-eabi-gdb.exe&#xD;&#xA;tools.daplink.path={runtime.tools.arm-none-eabi-gcc.path}/bin&#xD;&#xA;tools.daplink.pattern=&quot;{path}/{cmd}&quot; {args}&#xD;&#xA;tools.daplink.server.tool=vmopenocd&#xD;&#xA;tools.daplink.debug.server=vmopenocd&#xD;&#xA;tools.daplink.server.initCmd=-c &quot;init; reset halt&quot;&#xD;&#xA;vs-cmd.Debug.AttachtoProcess.tools.daplink.server.initCmd=-c &quot;init&quot;&#xD;&#xA;tools.daplink.upload.scriptPath=-s &quot;{upload.path}/scripts/&quot;&#xD;&#xA;tools.daplink.upload.boardCmd=-f &quot;interface/cmsis-dap.cfg&quot; -c &quot;adapter speed 1000&quot;&#xD;&#xA;tools.daplink.upload.cmd=bin/openocd.exe&#xD;&#xA;tools.daplink.upload.cmd.windows=bin/openocd.exe&#xD;&#xA;tools.daplink.upload.path={runtime.tools.openocd-0.10.0.20200213.path}&#xD;&#xA;tools.daplink.upload.address=localhost:3333&#xD;&#xA;tools.daplink.upload.params.verbose=-d2&#xD;&#xA;tools.daplink.upload.params.quiet=-d0&#xD;&#xA;tools.daplink.upload.elf.message=****[vMicro]**** Uploading ELF :&#xD;&#xA;tools.daplink.upload.pattern=&quot;{upload.path}/{upload.cmd}&quot; {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c &quot;echo -n {{upload.elf.message}}&quot; {upload.programCmd}&#xD;&#xA;tools.daplink.upload.extra_params=&#xD;&#xA;tools.daplink.upload.protocol=&#xD;&#xA;tools.daplink.protocol=&#xD;&#xA;vm.platform.root.path=c:\program files (x86)\microsoft visual studio\2019\community\common7\ide\extensions\bzshnrgk.433\Micro Platforms\arduino10x&#xD;&#xA;avrisp.name=AVR ISP&#xD;&#xA;avrisp.communication=serial&#xD;&#xA;avrisp.protocol=stk500v1&#xD;&#xA;avrispmkii.name=AVRISP mkII&#xD;&#xA;avrispmkii.communication=usb&#xD;&#xA;avrispmkii.protocol=stk500v2&#xD;&#xA;usbtinyisp.name=USBtinyISP&#xD;&#xA;usbtinyisp.protocol=usbtiny&#xD;&#xA;usbasp.name=USBasp&#xD;&#xA;usbasp.communication=usb&#xD;&#xA;usbasp.protocol=usbasp&#xD;&#xA;parallel.name=Parallel Programmer&#xD;&#xA;parallel.protocol=dapa&#xD;&#xA;parallel.force=true&#xD;&#xA;arduinoisp.name=Arduino as ISP&#xD;&#xA;arduinoisp.communication=serial&#xD;&#xA;arduinoisp.protocol=stk500v1&#xD;&#xA;arduinoisp.speed=19200&#xD;&#xA;runtime.vm.boardinfo.id=uno&#xD;&#xA;runtime.vm.boardinfo.name=uno&#xD;&#xA;runtime.vm.boardinfo.desc=Arduino Uno&#xD;&#xA;runtime.vm.boardinfo.src_location=c:\Program Files (x86)\Arduino\hardware\arduino&#xD;&#xA;ide.hint=For use with Arduino 0023 and 1.0.x versions&#xD;&#xA;ide.location.key=Arduino&#xD;&#xA;ide.rewrite=disabled&#xD;&#xA;ide.contributions.boards.allow=false&#xD;&#xA;ide.contributions.boards.ignore_unless_rewrite_found=true&#xD;&#xA;compiler.path=&#xD;&#xA;ide.location.ide.winreg=Arduino 1.0.x Application&#xD;&#xA;ide.location.sketchbook.winreg=Arduino 1.0.x Sketchbook&#xD;&#xA;ide.location.sketchbook.preferences=sketchbook.path&#xD;&#xA;ide.location.sketchbook.default=%MYDOCUMENTS%\arduino&#xD;&#xA;ide.location.preferences=%VM_APPDATA_ROAMING%\arduino\preferences.txt&#xD;&#xA;ide.default.package=arduino&#xD;&#xA;ide.default.platform=avr&#xD;&#xA;ide.multiplatform=true&#xD;&#xA;ide.includes=Arduino.h&#xD;&#xA;ide.platformswithoutpackage=true&#xD;&#xA;ide.includes.fallback=wprogram.h&#xD;&#xA;ide.extension=ino&#xD;&#xA;ide.extension.fallback=pde&#xD;&#xA;ide.versionLTEQ=149&#xD;&#xA;ide.exe=arduino.exe&#xD;&#xA;ide.hosts=atmel&#xD;&#xA;ide.url=https://www.visualmicro.com/page/Download-Arduino-Or-Other-Supporting-IDEs.aspx&#xD;&#xA;vm.debug=true&#xD;&#xA;software=ARDUINO&#xD;&#xA;ide.appid=arduino10x&#xD;&#xA;location.sketchbook=C:\Users\Terry H Ess\Documents\Arduino&#xD;&#xA;build.core.path=c:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino&#xD;&#xA;vm.core.include=arduino.h&#xD;&#xA;build.board=AVR_UNO&#xD;&#xA;vm.boardsource.path=c:\Program Files (x86)\Arduino\hardware\arduino&#xD;&#xA;runtime.platform.path=c:\Program Files (x86)\Arduino\hardware\arduino&#xD;&#xA;vm.platformname.name=avr&#xD;&#xA;build.arch=AVR&#xD;&#xA;" arduino.build.auto_discover_includes="0" arduino.build.core="arduino" arduino.build.f_cpu="16000000L" arduino.build.mcu="atmega328p" arduino.upload.maximum_size="32256" arduino.upload.port="COM3" arduino.upload.protocol="arduino" arduino.upload.speed="115200" config.Debug.customdebug_uno_debugger_type="universal" visualmicro.application.name="arduino10x" visualmicro.package.name="arduino" visualmicro.platform.name="avr" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

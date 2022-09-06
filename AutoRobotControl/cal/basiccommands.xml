@@ -1,0 +1,17 @@
+<grammar version="1.0" xml:lang="en-US" root="rootRule"
+ xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="rootRule">
+     <one-of>
+       <item> shutdown </item>
+       <item> exit </item>
+       <item> robot status </item>
+       <item> localize </item>
+       <item> last error </item>
+       <item> shoot </item>
+     </one-of>
+  </rule>
+
+
+</grammar>
+

@@ -1,0 +1,28 @@
+<grammar version="1.0" xml:lang="en-US" root="rootRule"
+ xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="rootRule">
+     <item> <ruleref uri="#orient" /> </item>
+  </rule>
+
+  <rule id="orient">
+    <item repeat="1-3"> <ruleref uri="#decdigit" /> </item>
+  </rule>
+
+  <rule id="decdigit">
+    <one-of>
+       <item> zero </item>
+       <item> one </item>
+       <item> two </item>
+       <item> three </item>
+       <item> four </item>
+       <item> five </item>
+       <item> six </item>
+       <item> seven </item>
+       <item> eight </item>
+       <item> nine </item>
+    </one-of>
+  </rule>
+
+</grammar>
+

@@ -1,0 +1,25 @@
+<grammar version="1.0" xml:lang="en-US" root="rootRule"
+ xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="rootRule">
+    <one-of>
+       <item> close display </item>
+       <item><ruleref uri="#display" /></item>
+    </one-of>
+  </rule>
+
+  <rule id="display">
+    <item> display </item>
+    <item>
+       <one-of>
+         <item>Connections</item>
+         <item>LIDAR Kinect Align</item>
+         <item>LIDAR Operation</item>
+         <item>Linear Motion Calibration</item>
+         <item>MC troubleshoot</item>
+         <item>Target Calibration</item>
+       </one-of>
+     </item>
+  </rule>
+
+</grammar>

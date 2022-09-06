@@ -1,0 +1,20 @@
+<grammar version="1.0" xml:lang="en-US" root="rootRule"
+ xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="rootRule">
+    <one-of>
+       <item> close skill </item>
+       <item><ruleref uri="#run" /></item>
+    </one-of>
+  </rule>
+
+  <rule id="run">
+    <item> run skill </item>
+    <item>
+       <one-of>
+         <item>Work Assist</item>
+       </one-of>
+     </item>
+  </rule>
+
+</grammar>
